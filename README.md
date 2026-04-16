@@ -1,79 +1,93 @@
 <div align="center">
 
-# 🎮 Bug Hunter: The Last Commit
+# 🌸 Bug Hunter: The Last Commit 🌸
+### *Microvideojoc textual de combats per torns en Java* 💻⚔️
 
-### *Microvideojoc textual de combats per torns desenvolupat en Java*
-
-Un projecte acadèmic d’**Entorns de Desenvolupament** centrat en el procés complet de construcció d’un sistema:  
-**idea → modelatge → prototip → proves → millora**
+<img src="https://img.shields.io/badge/Java-Project-ffb6d9?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Status-In%20Development-c8a2ff?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Type-Turn%20Based%20Game-ffd6a5?style=for-the-badge" />
+<img src="https://img.shields.io/badge/IDE-IntelliJ%20IDEA-bde0fe?style=for-the-badge" />
 
 <br>
 
-<img alt="Java" src="https://img.shields.io/badge/Java-Project-orange?style=flat-square&logo=openjdk&logoColor=white">
-<img alt="Status" src="https://img.shields.io/badge/status-in%20progress-blueviolet?style=flat-square">
-<img alt="Docs" src="https://img.shields.io/badge/docs-Markdown-111111?style=flat-square&logo=markdown">
-<img alt="GitHub" src="https://img.shields.io/badge/versioned%20with-GitHub-black?style=flat-square&logo=github">
+### ✨ *“Debugging the chaos, one bug at a time...”* ✨
 
 </div>
 
 ---
 
-## Índex
+## 🌷 Descripció del projecte
 
-- [Sobre el projecte](#sobre-el-projecte)
-- [Objectiu del joc](#objectiu-del-joc)
-- [Mecànica principal](#mecànica-principal)
-- [Bucle de joc](#bucle-de-joc)
-- [Tecnologies](#tecnologies)
-- [Estructura del repositori](#estructura-del-repositori)
-- [Fases del desenvolupament](#fases-del-desenvolupament)
-- [Execució](#execució)
-- [Autor](#autor)
+**Bug Hunter: The Last Commit** és un microvideojoc desenvolupat en **Java** com a projecte acadèmic d’**Entorns de Desenvolupament**.
+
+Es tracta d’un **joc textual de combats per torns**, on el jugador assumeix el rol d’un desenvolupador que ha d’eliminar errors crítics del sistema abans que el projecte col·lapsi del tot.  
+La proposta està pensada per ser **simple, funcional, viable i ben estructurada**, prioritzant la lògica interna, el modelatge i la qualitat del desenvolupament per sobre dels elements visuals.
 
 ---
 
-## Sobre el projecte
+## 🎀 Objectiu del joc
 
-**Bug Hunter: The Last Commit** és un microvideojoc textual on el jugador assumeix el rol d’un desenvolupador que ha d’eliminar bugs crítics d’un sistema abans que aquest col·lapsi.
+L’objectiu principal és **derrotar tots els enemics** representats com a bugs del sistema, gestionant correctament la vida, la defensa i les accions disponibles durant cada combat.
 
-El projecte ha estat concebut amb un abast reduït i realista, prioritzant:
-
-- la coherència del sistema
-- la qualitat de l’estructura
-- la documentació del procés
-- la viabilitat dins del temps disponible
+El jugador guanya quan supera tots els combats.  
+La partida acaba en derrota si la seva vida arriba a **0 o menys**.
 
 ---
 
-## Objectiu del joc
+## 🕹️ Mecàniques principals
 
-Derrotar tots els enemics abans que la vida del jugador arribi a zero.
+El joc funciona amb un sistema de **combats per torns**.
 
-Cada enemic representa un bug del sistema i cada combat obliga el jugador a prendre decisions simples però estratègiques.
+### Accions del jugador
+- **Atacar** → fa dany directe a l’enemic
+- **Defensar-se** → redueix el dany rebut al següent atac
+- **Recuperar vida** → restaura una part de la salut, amb usos limitats
+- **Depuració arriscada** → acció especial amb resultat variable
 
----
-
-## Mecànica principal
-
-El joc es basa en un sistema de **combats per torns**.
-
-### El jugador pot:
-- atacar
-- defensar-se
-- recuperar vida
-- executar una acció especial de depuració
-
-### El sistema gestiona:
-- punts de vida
-- torns
-- accions limitades
-- estat de combat
-- victòria i derrota
+### Sistema de combat
+- El jugador tria una acció
+- L’acció s’aplica
+- Si l’enemic continua viu, ataca
+- Els estats del joc s’actualitzen
+- El cicle es repeteix fins a victòria o derrota
 
 ---
 
-## Bucle de joc
+## 💖 Característiques del projecte
 
-```text
-Mostrar estat → llegir acció → validar entrada → aplicar acció →
-executar torn enemic → actualitzar estat → comprovar final → repetir
+- 🎮 Joc completament funcional en consola
+- 🔁 Bucle de joc clar i repetible
+- ❤️ Gestió d’estats interns del joc
+- ⚔️ Sistema de combat per torns
+- 🧩 Estructura modular pensada per ser escalable
+- 🧪 Fàcil de provar i depurar
+- 📘 Dissenyat per documentar tot el procés de desenvolupament
+- 🌸 Idea viable dins del límit temporal del projecte
+
+---
+
+## 🌼 Estructura del repositori
+
+```bash
+BugHunter-TheLastCommit/
+│
+├── src/
+│   ├── Main.java
+│   ├── Game.java
+│   ├── Player.java
+│   ├── Enemy.java
+│   └── Combat.java
+│
+├── docs/
+│   ├── 01_idea_i_abast.md
+│   ├── 02_model_del_joc.md
+│   ├── 03_entorn_i_prototip.md
+│   ├── 04_proves_i_depuracio.md
+│   └── 05_millores_i_reflexio_final.md
+│
+├── diagrames/
+│   ├── diagrama_classes.png
+│   └── diagrama_comportament.png
+│
+├── IA_log.md
+└── README.md
