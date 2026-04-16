@@ -91,3 +91,192 @@ BugHunter-TheLastCommit/
 │
 ├── IA_log.md
 └── README.md
+```
+
+---
+
+## 🌟 Tecnologies utilitzades
+
+- **Java**
+- **IntelliJ IDEA Community Edition**
+- **Git**
+- **GitHub**
+- **draw.io** o **PlantUML** per a diagrames
+- **ChatGPT** com a suport per a ideació, revisió i documentació
+
+---
+
+## 🧠 Estructura lògica del joc
+
+El projecte està pensat per treballar una estructura clara basada en responsabilitats separades:
+
+### `Player`
+Gestiona les dades i accions del jugador:
+- vida
+- defensa
+- curacions disponibles
+- accions de combat
+
+### `Enemy`
+Representa cada bug o enemic:
+- nom
+- vida
+- atac
+- comportament bàsic
+
+### `Combat`
+Controla la lògica de cada enfrontament:
+- torn del jugador
+- torn de l’enemic
+- aplicació d’efectes
+- comprovació de derrota o victòria
+
+### `Game`
+Coordina el flux global de la partida:
+- inici del joc
+- progressió entre combats
+- estat general
+- final de partida
+
+### `Main`
+Punt d’entrada del programa.
+
+---
+
+## 🔁 Bucle principal del joc
+
+El bucle del joc segueix aquesta seqüència:
+
+1. Mostrar l’estat actual del combat
+2. Mostrar les opcions disponibles
+3. Llegir la decisió del jugador
+4. Validar l’entrada
+5. Aplicar l’acció escollida
+6. Executar el torn de l’enemic si continua viu
+7. Actualitzar els estats interns
+8. Comprovar victòria o derrota
+9. Repetir
+
+Aquest bucle és el nucli del sistema i dona coherència a tota la implementació.
+
+---
+
+## 🌈 Estats del joc
+
+Alguns dels estats principals que es gestionen al llarg de la partida són:
+
+- `vidaJugador`
+- `vidaEnemic`
+- `recuperacionsRestants`
+- `defensaActiva`
+- `enemicsDerrotats`
+- `estatPartida`
+
+Aquests valors evolucionen durant el joc i determinen el comportament del sistema en cada moment.
+
+---
+
+## 💥 Condicions de victòria i derrota
+
+### ✅ Victòria
+El jugador derrota tots els bugs o enemics del sistema.
+
+### ❌ Derrota
+La vida del jugador arriba a 0 o menys abans d’acabar tots els combats.
+
+---
+
+## 🧪 Proves i depuració
+
+Aquest projecte inclou una fase específica de verificació per comprovar:
+
+- funcionament correcte del bucle principal
+- validació de les entrades de l’usuari
+- comportament esperat de les accions
+- actualització correcta dels estats
+- detecció i correcció d’errors lògics
+
+La idea no és només que el joc “funcioni”, sinó demostrar que es pot **provar, analitzar i millorar** com qualsevol altre sistema software.
+
+---
+
+## 🌸 Com executar el projecte
+
+### Opció 1. Des d’IntelliJ IDEA
+1. Obrir el projecte a IntelliJ
+2. Verificar que el JDK estigui configurat correctament
+3. Obrir `Main.java`
+4. Executar el programa
+
+### Opció 2. Des de terminal
+```bash
+javac src/*.java
+java src/Main
+```
+
+> *La forma exacta pot variar segons l’estructura final de paquets del projecte.*
+
+---
+
+## 🎐 Objectius acadèmics del projecte
+
+Aquest microvideojoc no està pensat com un producte comercial ni com un joc visualment complex.  
+El seu valor principal és servir com a evidència de les diferents fases del desenvolupament de programari:
+
+- anàlisi de la idea
+- delimitació de l’abast
+- modelatge
+- implementació
+- proves i depuració
+- millora i refactorització
+- documentació del procés
+
+Per tant, el focus principal és **pensar i treballar com un desenvolupador**, no només escriure codi perquè sí.
+
+---
+
+## 🩷 Ús de la IA
+
+La intel·ligència artificial s’ha utilitzat com a eina de suport per:
+
+- explorar alternatives de joc
+- comparar mecàniques
+- revisar la viabilitat de la proposta
+- millorar la redacció de la documentació
+- identificar possibles riscos o punts febles
+
+La IA no s’ha utilitzat per substituir el disseny ni la comprensió del projecte, sinó com a suport per prendre decisions amb més criteri.
+
+---
+
+## 🌟 Estat del projecte
+
+📌 **Fase actual:** desenvolupament acadèmic per fases
+
+- [x] Idea i abast
+- [ ] Modelatge del sistema
+- [ ] Prototip funcional
+- [ ] Proves i depuració
+- [ ] Millores i reflexió final
+
+---
+
+## 👤 Autor
+
+**[El teu nom aquí]**  
+Projecte individual per al mòdul d’**Entorns de Desenvolupament**  
+Cicle formatiu **DAM / DAW**
+
+---
+
+## 💌 Nota final
+
+Aquest projecte busca demostrar que un microvideojoc petit també pot estar **ben pensat, ben documentat i ben desenvolupat**.  
+No cal crear un joc gegant per demostrar criteri tècnic.
+
+<div align="center">
+
+### 🌸 Thanks for visiting this cute little repo 🌸
+**Made with logic, caffeine and emotional damage** ♡
+
+</div>
