@@ -263,9 +263,9 @@ La IA no s’ha utilitzat per substituir el disseny ni la comprensió del projec
 
 ## 👤 Autor
 
-**[El teu nom aquí]**  
+**Oriol March Vernet**  
 Projecte individual per al mòdul d’**Entorns de Desenvolupament**  
-Cicle formatiu **DAM / DAW**
+Cicle formatiu **1r DAM**
 
 ---
 
