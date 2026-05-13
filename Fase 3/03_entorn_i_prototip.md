@@ -218,8 +218,14 @@ La següent fase consistirà a verificar el comportament del sistema amb casos d
 
 ---
 
-## 10. Conclusió
+Amb aquest codi, a l’apartat de funcionalitats implementades ja pots dir que tens:
 
-En aquesta fase s’ha passat del model teòric a una primera implementació funcional. L’entorn de desenvolupament ha quedat configurat correctament, el projecte s’executa des de l’IDE i el prototip ja permet iniciar una partida, interactuar amb l’usuari i resoldre un combat bàsic.
-
-Això proporciona una base coherent per avançar cap a la fase de verificació, proves i depuració.
+inici de partida
+combats per torns
+atac
+defensa
+curació
+acció especial arriscada
+validació bàsica de l’entrada
+múltiples enemics
+resultat final de victòria o derrota
