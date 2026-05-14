@@ -1,6 +1,11 @@
+import javax.swing.SwingUtilities;
+
 public class main {
     public static void main(String[] args) {
-        Game game = new Game();
-        game.startGame();
+        SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new GameGUI();
+            }
+        });
     }
 }
